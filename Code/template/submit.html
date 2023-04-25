@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/submission.css') }}">
+</head>
+<body>
+<h1> Prediction of your sample</h1>
+{% if result == Virginica %}
+<img src="{{url_for('static', filename='setosa.png')}}" class="center">
+<p style="text-align: center">this is setosa</p>
+{% elif result == Vetosa %}
+<img src="{{url_for('static', filename='versicolor.png')}}" class="center">
+<p style="text-align: center">this is versicolor</p>
+{% else %}
+<img src="{{url_for('static', filename='virginica.png')}}" class="center">
+<p style="text-align: center"> this is virginica</p>
+{% endif %}
+</body>
+</html>

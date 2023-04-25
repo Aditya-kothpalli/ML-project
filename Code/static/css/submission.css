@@ -1,0 +1,17 @@
+body{
+background: linear-gradient(90deg, #d0ffae, #34ebe9);
+}
+h1{
+text-align: center;
+font-size: 33px;
+font-family: 'Poppins', sans-serif;
+margin-top: 60px;
+color: black;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 28%;
+  padding-top: 35px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+    <style>
+        body{
+        color: Red;
+        text-align: center;
+        background-image: url('https://lupuart.files.wordpress.com/2021/03/how-to-draw-a-design-inspired-by-the-iris-flower-1.jpg?w=1200');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        }
+    </style>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+
+ <div class="login">
+	<h1 style="color: Blue;">Flower Class Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+     <h2 style="font-family:verdana;">About Us</h2>
+            <p>This is a Iris Flower Prediction.</p>
+            <p>This website helps you to predict the Iris flower and it's usages followed by the given values of the user.</p>
+            <p>To classify among the various flowers</p>
+            <p>To classify the flowers, click on "Start".</p>
+     <button class="read-more-btn" onclick="window.location.href='{{ url_for('forms') }}';">Start</button>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
